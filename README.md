@@ -4,6 +4,8 @@
 
 ### Códigos e projetos desenvolvidos durante o curso da [Alura](https://cursos.alura.com.br/career/engenheiro-javascript)
 
+#### Sumário 
+
 1. JavaScript avançado I: ES6, orientação a objetos e padrões de projetos
 
 1. JavaScript Avançado II: ES6, orientação a objetos e padrões de projetos
