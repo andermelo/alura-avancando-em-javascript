@@ -7,7 +7,7 @@
 #### Sumário 
 
 1. JavaScript avançado I: ES6, orientação a objetos e padrões de projetos
-    * [projeto desenvolvido durante o curso](https://github.com/andermelo/alura-engenheiro-javascript/tree/master/javascript-avancado-i-aula1/aluraframe)
+    * [projeto desenvolvido durante o curso](https://github.com/andermelo/alura-engenheiro-javascript/tree/master/javascript-avancado-i/aluraframe)
 
 1. JavaScript Avançado II: ES6, orientação a objetos e padrões de projetos
 
