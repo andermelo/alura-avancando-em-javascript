@@ -19,3 +19,7 @@
 1. Jasmine: Testes automatizados em JavaScript
 
 1. Progressive Web Apps: crie apps offline
+
+#### Recursos utilizados
+
+* Visual Studio Code
