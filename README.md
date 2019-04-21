@@ -27,7 +27,7 @@
     
 1. Progressive Web Apps: crie apps offline
 
-1. [Referência bibliográfica]()
+1. [Referência bibliográfica](#referência-bibliográfica)
 
 
 ## Recursos utilizados
