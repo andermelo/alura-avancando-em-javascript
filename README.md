@@ -23,3 +23,4 @@
 #### Recursos utilizados
 
 * Visual Studio Code
+* ES6
