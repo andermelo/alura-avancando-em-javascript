@@ -30,15 +30,15 @@
 1. [Referência bibliográfica]()
 
 
-## O padrão de projeto Observer
-> Usamos o padrão de projeto Observer sempre que queremos notificar partes do sistema interessadas quando um evento importante for disparado em nosso sistema.
-
-> No contexto da nossa aplicação, entendemos um evento como o ato de adicionar ou esvaziar nossa lista de negociações. É a view que está interessada em observar esse evento e tomar uma ação, no caso, se atualizar com base no estado mais atual do modelo.
-
-
 ## Recursos utilizados
 
 * Visual Studio Code
 * ES6
+
+## O padrão de projeto Observer
+
+> Usamos o padrão de projeto Observer sempre que queremos notificar partes do sistema interessadas quando um evento importante for disparado em nosso sistema.
+
+> No contexto da nossa aplicação, entendemos um evento como o ato de adicionar ou esvaziar nossa lista de negociações. É a view que está interessada em observar esse evento e tomar uma ação, no caso, se atualizar com base no estado mais atual do modelo.
 
 ## Referência bibliográfica
