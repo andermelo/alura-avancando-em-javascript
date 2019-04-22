@@ -16,6 +16,7 @@
     * [projeto desenvolvido durante o curso](https://github.com/andermelo/alura-engenheiro-javascript/tree/master/projetos/negociacoes)
     * [Exercícios](https://github.com/andermelo/alura-engenheiro-javascript/tree/master/exercicios)
     * [O padrão de projeto Observer](#o-padrão-de-projeto-observer)
+    * [O Padrão de projeto proxy](#o-padrão-de-projeto-proxy)
 
 1. JavaScript Avançado III: ES6, orientação a objetos e padrões de projetos
     * [projeto desenvolvido durante o curso](https://github.com/andermelo/alura-engenheiro-javascript/tree/master/projetos/negociacoes)
@@ -40,5 +41,8 @@
 > Usamos o padrão de projeto Observer sempre que queremos notificar partes do sistema interessadas quando um evento importante for disparado em nosso sistema.
 
 > No contexto da nossa aplicação, entendemos um evento como o ato de adicionar ou esvaziar nossa lista de negociações. É a view que está interessada em observar esse evento e tomar uma ação, no caso, se atualizar com base no estado mais atual do modelo.
+
+## O Padrão de projeto proxy
+
 
 ## Referência bibliográfica
