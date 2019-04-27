@@ -44,5 +44,6 @@
 
 ## O Padrão de projeto proxy
 
+> A partir da versão 2015 do ECMAScript, a própria linguagem já possui um recurso de Proxy.
 
 ## Referência bibliográfica
