@@ -46,4 +46,17 @@
 
 > A partir da versão 2015 do ECMAScript, a própria linguagem já possui um recurso de Proxy.
 
+> O padrão de projeto Proxy nada mais é do que um objeto "falso", "mentiroso", que envolve e encapsula o objeto real que queremos interagir. É como se fosse uma interface, entre o objeto real e o resto do código. Conseguimos assim controlar o acesso aos seus atributos e métodos. Nele também podemos pendurar códigos que não cabem de estar alocados nos nossos modelos, mas que necessitam ser executados no caso de uma alteração ou atualização do mesmo.
+
+```
+O target é o objeto real que é encapsulado pela proxy. É este objeto que não queremos "sujar" com armadilhas ou qualquer código que não diga respeito ao modelo.
+
+O prop é a propriedade em si, que está sendo lida naquele momento.
+
+O receiver é a referência ao próprio proxy. É na configuração do handler do Proxy que colocamos armadilhas.
+
+```
+
+> A variável *arguments* é uma variável implícita que pode ser acessada em métodos ou funções. Ele se comporta como um array onde cada posição equivale ao parâmetro que foi passado para o método ou função. Existe desde o ES5!
+
 ## Referência bibliográfica
