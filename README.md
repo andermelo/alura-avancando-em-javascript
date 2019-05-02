@@ -54,4 +54,11 @@
 
 > A variável *arguments* é uma variável implícita que pode ser acessada em métodos ou funções. Ele se comporta como um array onde cada posição equivale ao parâmetro que foi passado para o método ou função. Existe desde o ES5!
 
+## O Padrão de projeto Factory
+
+> O padrão de projeto Factory é um dos padrões mais utilizados no desenvolvimento. Ele é mais um da categoria dos patterns responsáveis por criar objetos, como o Builder e o Prototype.
+
+> *Serve para você delegar a construção de um objeto sem ter que se preocupar com as particularidades dela. Por exemplo, para construir uma casa: você, cliente quer uma casa com dois quartos, com uma varanda, térrea e com duas vagas. O que você faz? chama a construtora e fala pra eles fabricarem a casa pra você, pois você não quer saber quanto de cimento deve ser comprado, qual a profundidade da fundação, que tipo de telha será usada. Você quer a casa padrão com essas coisas que você pediu. O factory faz isso pra você. Define padrões e aplica as customizações em cima disso.* by Marco Salles - Instrutor 
+Alura <3
+
 ## Referência bibliográfica
