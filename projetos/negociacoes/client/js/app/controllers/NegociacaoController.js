@@ -1,17 +1,16 @@
 class NegociacaoController {
-    
     constructor() {
-        
         let $ = document.querySelector.bind(document);
 
         this._inputData = $('#data');
         this._inputQuantidade = $('#quantidade');
         this._inputValor = $('#valor');
+        this._ordemAtual = ''; // quando a página for carregada, não tem critério. Só passa a ter quando ele começa a clicar nas colunas
         
          this._listaNegociacoes = new Bind(
             new ListaNegociacoes(),
             new NegociacoesView($('#negociacoesView')),
-            'adiciona', 'esvazia');
+            'adiciona', 'esvazia', 'ordena', 'inverteOrdem');
 
         this._mensagem = new Bind(
             new Mensagem(), new MensagemView($('#mensagemView')),
@@ -20,7 +19,6 @@ class NegociacaoController {
     }
     
     adiciona(event) {
-        
         event.preventDefault();
         this._listaNegociacoes.adiciona(this._criaNegociacao());
         this._mensagem.texto = 'Negociação adicionada com sucesso';        
@@ -28,51 +26,23 @@ class NegociacaoController {
     }
 
     importaNegociacoes(){
-
         let service = new NegociacaoService();
-        
-        service.obterNegociacaoDaSemana((erro, negociacoes) => {
-
-            if(erro){
-                this._mensagem.texto = erro;
-                return;
-            }
-
-            negociacoes.forEach(negociacao => this._listaNegociacoes.adiciona(negociacao));
-
-            service.obterNegociacaoDaSemanaAnterior((erro, negociacoes) => {
-
-                if(erro){
-                    this._mensagem.texto = erro;
-                    return;
-                }
-    
-                negociacoes.forEach(negociacao => this._listaNegociacoes.adiciona(negociacao));
-
-                service.obterNegociacaoDaSemanaRetrasada((erro, negociacoes) => {
-
-                    if(erro){
-                        this._mensagem.texto = erro;
-                        return;
-                    }
-        
-                    negociacoes.forEach(negociacao => this._listaNegociacoes.adiciona(negociacao));
-                    this._mensagem.texto = 'Negociação importada com sucesso';
-                });
-            });
-        });
-    
+        service
+        .obterNegociacoes()
+        .then(negociacoes => {
+          negociacoes.forEach(negociacao => this._listaNegociacoes.adiciona(negociacao));
+          this._mensagem.texto = 'Negociações do período importadas com sucesso';
+        })
+        .catch(error => this._mensagem.texto = error); 
+   
     }
     
     apaga() {
-        
         this._listaNegociacoes.esvazia();
         this._mensagem.texto = 'Negociações apagadas com sucesso';
-    
     }
     
     _criaNegociacao() {
-        
         return new Negociacao(
             DateHelper.textoParaData(this._inputData.value),
             this._inputQuantidade.value,
@@ -86,4 +56,12 @@ class NegociacaoController {
         this._inputData.focus();   
     }
 
+    ordena(coluna) {
+        if(this._ordemAtual == coluna) {
+            this._listaNegociacoes.inverteOrdem();
+        } else {
+            this._listaNegociacoes.ordena((a, b) => a[coluna] - b[coluna]);
+        }
+        this._ordemAtual = coluna
+    }
 }
