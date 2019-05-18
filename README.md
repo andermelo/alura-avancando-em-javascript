@@ -61,4 +61,8 @@
 > *Serve para você delegar a construção de um objeto sem ter que se preocupar com as particularidades dela. Por exemplo, para construir uma casa: você, cliente quer uma casa com dois quartos, com uma varanda, térrea e com duas vagas. O que você faz? chama a construtora e fala pra eles fabricarem a casa pra você, pois você não quer saber quanto de cimento deve ser comprado, qual a profundidade da fundação, que tipo de telha será usada. Você quer a casa padrão com essas coisas que você pediu. O factory faz isso pra você. Define padrões e aplica as customizações em cima disso.* by Marco Salles - Instrutor 
 Alura <3
 
+## O Padrão de projeto Promise
+
+
+
 ## Referência bibliográfica

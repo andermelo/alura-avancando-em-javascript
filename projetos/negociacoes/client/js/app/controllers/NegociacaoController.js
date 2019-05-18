@@ -39,7 +39,27 @@ class NegociacaoController {
             }
 
             negociacoes.forEach(negociacao => this._listaNegociacoes.adiciona(negociacao));
-            this._mensagem.texto = 'Negociação importada com sucesso';
+
+            service.obterNegociacaoDaSemanaAnterior((erro, negociacoes) => {
+
+                if(erro){
+                    this._mensagem.texto = erro;
+                    return;
+                }
+    
+                negociacoes.forEach(negociacao => this._listaNegociacoes.adiciona(negociacao));
+
+                service.obterNegociacaoDaSemanaRetrasada((erro, negociacoes) => {
+
+                    if(erro){
+                        this._mensagem.texto = erro;
+                        return;
+                    }
+        
+                    negociacoes.forEach(negociacao => this._listaNegociacoes.adiciona(negociacao));
+                    this._mensagem.texto = 'Negociação importada com sucesso';
+                });
+            });
         });
     
     }
@@ -60,7 +80,6 @@ class NegociacaoController {
     }
     
     _limpaFormulario() {
-     
         this._inputData.value = '';
         this._inputQuantidade.value = 1;
         this._inputValor.value = 0.0;
