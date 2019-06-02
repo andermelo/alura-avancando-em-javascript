@@ -22,11 +22,6 @@
     * [projeto desenvolvido durante o curso](https://github.com/andermelo/alura-engenheiro-javascript/tree/master/projetos/negociacoes)
     * [Exercícios](https://github.com/andermelo/alura-engenheiro-javascript/tree/master/exercicios)
 
-1. JavaScript: De padrões a uma abordagem funcional
-
-1. Jasmine: Testes automatizados em JavaScript
-    
-1. Progressive Web Apps: crie apps offline
 
 1. [Referência bibliográfica](#referência-bibliográfica)
 
@@ -62,7 +57,19 @@
 Alura <3
 
 ## O Padrão de projeto Promise
+>Um Promise representa um proxy para um valor que não é necessariamente conhecido quando a promessa é criada. Isso permite a associação de métodos de tratamento para eventos da ação assíncrona num caso eventual de sucesso ou de falha. Isto permite que métodos assíncronos retornem valores como métodos síncronos: ao invés do valor final, o método assíncrono retorna uma promessa ao valor em algum momento no futuro.
 
+Um Promise está em um destes estados: 
 
+    - pending (pendente): Estado inicial, que não foi realizada nem rejeitada.
+    - fulfilled (realizada): sucesso na operação.
+    - rejected (rejeitado):  falha na operação.
+    - settled (estabelecida): Que foi realizada ou rejeitada.
+
+## O Padrão de projeto DAO
 
 ## Referência bibliográfica
+ 
+ 1. [Alura](https://www.alura.com.br)
+ 1. [ECMAScript 6 - ECMAScript 2015](https://www.w3schools.com/js/js_es6.asp)
+ 1. [Promise](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise)
