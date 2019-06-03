@@ -1,17 +1,16 @@
 # Alura Avançando em JavaScript
 
-[![js image](https://cdn-images-1.medium.com/max/1600/0*CU8lM9dhv_M_XL4L.gif)](https://cursos.alura.com.br/career/engenheiro-javascript)
+[![js image](https://cdn-images-1.medium.com/max/1600/0*CU8lM9dhv_M_XL4L.gif)](https://alura.com.br)
 
 > Códigos e projetos desenvolvidos durante o curso da [Alura](https://alura.com.br)
 
 ## Sumário 
 
-1. [Recursos utilizados]()
+1. [Recursos utilizados](#recursos-utilizados)
 
 1. JavaScript avançado I: ES6, orientação a objetos e padrões de projetos
     * [projeto desenvolvido durante o curso](https://github.com/andermelo/alura-engenheiro-javascript/tree/master/projetos/negociacoes)
     * [Exercícios](https://github.com/andermelo/alura-engenheiro-javascript/tree/master/exercicios)         
-
 1. JavaScript Avançado II: ES6, orientação a objetos e padrões de projetos
     * [projeto desenvolvido durante o curso](https://github.com/andermelo/alura-engenheiro-javascript/tree/master/projetos/negociacoes)
     * [Exercícios](https://github.com/andermelo/alura-engenheiro-javascript/tree/master/exercicios)
@@ -21,7 +20,6 @@
 1. JavaScript Avançado III: ES6, orientação a objetos e padrões de projetos
     * [projeto desenvolvido durante o curso](https://github.com/andermelo/alura-engenheiro-javascript/tree/master/projetos/negociacoes)
     * [Exercícios](https://github.com/andermelo/alura-engenheiro-javascript/tree/master/exercicios)
-
 
 1. [Referência bibliográfica](#referência-bibliográfica)
 
