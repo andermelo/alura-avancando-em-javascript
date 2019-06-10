@@ -74,3 +74,4 @@ Um Promise está em um destes estados:
  1. [Alura](https://www.alura.com.br)
  1. [ECMAScript 6 - ECMAScript 2015](https://www.w3schools.com/js/js_es6.asp)
  1. [Promise](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
