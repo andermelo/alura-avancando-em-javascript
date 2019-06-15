@@ -148,9 +148,13 @@ alert(achou);
 > Veja que o critério de comparação usa a expressão regular criada literalmente com //. Nela, procuramos pela parte médic, sem levar em consideração se o caractere é maiúsculo ou minúsculo, com o modificador i.
 
 
+
+
 ## Referência bibliográfica
  
  1. [Alura](https://www.alura.com.br)
  1. [ECMAScript 6 - ECMAScript 2015](https://www.w3schools.com/js/js_es6.asp)
  1. [Promise](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+ 1. [fetch](https://github.com/github/fetch/blob/master/fetch.js)
+ 1. [Babel](https://babeljs.io/)
 
