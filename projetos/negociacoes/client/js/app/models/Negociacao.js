@@ -7,6 +7,11 @@ class Negociacao {
         Object.freeze(this);
     }
 
+    isEquals(outraNegociacao) {        
+        return this._data.getTime() == outraNegociacao.data.getTime()
+            && this._valor == outraNegociacao.valor;
+    }
+
     get volume(){
 
         return this._quantidade * this._valor;
