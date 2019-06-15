@@ -71,6 +71,46 @@ Um Promise está em um destes estados:
 
 > Falando um pouco mais técnico e nem por isso menos bonito, o DAO faz parte da camada de persistência, funciona como uma fachada para a API do IndexedDB. Repare que para usar o DAO não é preciso saber os detalhes do store ou cursor.
 
+## Comparação entre objetos
+
+## "Some"body help me!
+
+Temos a seguinte classe que define o retângulo:
+
+```javascript
+class Retangulo {
+
+    constructor(base, altura) {
+
+        this.base = base;
+        this.altura = altura;
+    }
+
+    areaCalculada() {
+        return this.base * this.altura;
+    }
+}
+```
+
+Em seguida, temos duas instâncias com valores iguais de base e altura:
+
+```javascript
+let r1 = new Retangulo(10,5);
+let r2 = new Retangulo(10,5);
+```
+
+> Existem tipos primitivos em JavaScript chamado de literais que podem ser acessados como objetos quanto invocamos algum método. O encapsulamento de um primitivo por um objeto automaticamente pelo interpretador é chamado de autoboxing. Por mais que tenhamos um objeto representando um número, a comparação será pelo valor literal (primitivo) e não pela referência. Números são encapsulados pela função construtora Number.
+
+```javascript
+console.log(r1.base == r2.base && r1.altura == r2.altura);
+```
+
+> Uma maneira de comparamos um objeto com outro é converter ambos os objetos envolvidos na comparação para String, com o auxílio de JSON.stringify, que está preparado para converter um objeto JavaScript para uma string. Essa solução é interessante quando o objeto possui muitas propriedades.
+
+```javascript
+console.log(JSON.stringify(r1) == JSON.stringify(r2));
+```
+
 
 ## Referência bibliográfica
  
