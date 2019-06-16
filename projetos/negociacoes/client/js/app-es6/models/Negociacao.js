@@ -1,4 +1,4 @@
-class Negociacao {
+export class Negociacao {
     constructor(data, quantidade, valor){
 
         this._data = new Date(data.getTime());  // criando uma nova instância a partir do tempo de uma data 
